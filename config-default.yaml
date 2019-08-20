@@ -1,0 +1,51 @@
+---
+# Адреса электронной почты для отчётов администратору
+#  - asd@mail.ru
+#  - vvv@yandex.ru
+admin_emails: []
+
+# Обязательное
+# smtp_server: "smtp.gmail.com"
+smtp_server: ""
+smtp_port: 465
+smtp_tls: true
+
+# обязательное
+#smtp_login: "asd@gmail.com"
+smtp_login: ""
+
+# обязательное
+#smtp_password: "..."
+smtp_password: ""
+
+# обязательное. Адрес отправителя, например asd@mail.ru
+smtp_from: ""
+
+# 0 - каждый день
+# 1-7 понедельник-воскресенье
+ok_report_day: 1
+
+# Путь к файлу кеша
+state_file: state.yaml
+
+# если до истеченя срока действия домена осталось больше дней, чем указано
+# проверка домена не производится
+check_domain_before_expire_days: 60
+
+# Если до истечения срока действия домена осталось меньше дней - отправляются отчеты
+expire_soon_days: 7
+
+# прекратить кеширование whois-информации о домене за столько дней до истечения срока его действия
+no_cache_days_before_expire: 60
+
+# Формат вывода лога: Hierarchy, Lines
+# Hierarchy - В виде иерархии - удобнее чтобы человек читал лог целиком
+# Lines - Все значения контекста повторяются на каждой строке лога, без иерархии - удобнее для обработки через grep.
+log_format: Hierarchy
+
+# Подробность логирования
+# Debug, Info, Error
+log_level: Debug
+
+# Путь к файлу с описанием клиентов и доменов
+customers_file: customers.yaml

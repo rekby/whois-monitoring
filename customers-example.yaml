@@ -1,0 +1,20 @@
+- name: "customer1"
+  # Если disabled = true - проверка доменов этого клиента не выполняется, отчеты на отправляются
+  disabled: true
+  emails:
+    - asd@mail.ru
+    # Если email-адрес начинается с OFF: - отчеты на этот адрес не отправляются.
+    - OFF:fdafasdf@gmail.com
+  domains:
+    - domain: eee.ru
+      account: nic.ru - asd
+      # Просто поле в конфиге/отчете. На работу программы в данный момент не влияет.
+      # default=false
+      autorenew: true
+- name: customer2
+  emails:
+    - sss@aaa.com
+  domains:
+    - domain: ffdaf.ru
+      account: reg.ru - qweqwe
+      autorenew: true
