@@ -1,14 +1,15 @@
 - name: "customer1"
-  # Если disabled = true - проверка доменов этого клиента не выполняется, отчеты на отправляются
+  # If disabled = true - no check domains of the customer. No send reports.
   disabled: true
   emails:
     - asd@mail.ru
-    # Если email-адрес начинается с OFF: - отчеты на этот адрес не отправляются.
+    # If email starts with OFF: - no send reports to the email.
     - OFF:fdafasdf@gmail.com
   domains:
     - domain: eee.ru
+      # report field
       account: nic.ru - asd
-      # Просто поле в конфиге/отчете. На работу программы в данный момент не влияет.
+      # Only report field
       # default=false
       autorenew: true
 - name: customer2

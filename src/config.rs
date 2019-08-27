@@ -37,8 +37,6 @@ pub(super) struct Config {
 
     pub smtp_from: String,
 
-    pub check_domain_before_expire_days: u16,
-
     pub expire_soon_days: u16,
 
     pub ok_report_day: u8,

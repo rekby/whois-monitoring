@@ -7,14 +7,12 @@ pub(super) struct Flags {
     pub config: String,
 
     #[structopt(long = "print-default-config")]
-    /// Напечатать настройки по умолчанию и завершить выполнение.
-    ///
-    /// в config.yaml достаточно переопредлить настройки, которым не подходит вариант по умолчанию
-    /// и обязательные настройки.
+    /// It need write to config.yaml only required field and options, which you want override.
+    /// No need copy default opetions values.
     pub print_default_config: bool,
 
     #[structopt(long = "print-customers-example")]
-    /// Напечатать пример customers.yaml и выйти завершить выполнение.
+    /// Print customers.yaml example and exit.
     pub print_customers_example: bool,
 }
 
