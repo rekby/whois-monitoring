@@ -1,6 +1,7 @@
 use structopt::StructOpt;
 
 #[derive(StructOpt, Debug)]
+/// https://github.com/rekby/whois-monitoring
 pub(super) struct Flags {
     #[structopt(short = "c", long = "config", default_value = "config.yaml")]
     /// Path to config file

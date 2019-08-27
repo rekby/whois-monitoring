@@ -28,13 +28,13 @@ if [ -z $TRAVIS_TAG ]; then
     runtest
 fi
 
-echo "!!!rekby-debug"
-ls -la target/release
-
-echo "!!! 2"
-ls -la target/release/*
-
-echo "!!! find"
-echo "$PWD"
-find / -iname "*whois*monitoring*" 2>/dev/null || true
+#echo "!!!rekby-debug"
+#ls -la target/release
+#
+#echo "!!! 2"
+#ls -la target/release/*
+#
+#echo "!!! find"
+#echo "$PWD"
+#find / -iname "*whois*monitoring*" 2>/dev/null || true
 
